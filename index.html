@@ -47,7 +47,16 @@
             border-bottom: 1px solid var(--border);
         }
 
-        .logo { font-weight: 600; letter-spacing: 1px; font-size: 1.1rem; text-transform: uppercase; }
+        .logo { 
+            display: flex; 
+            align-items: center; 
+        }
+
+        .logo img {
+            height: 45px; /* Controls the size */
+            width: auto;
+            border-radius: 6px; /* Softens the corners for a premium look */
+        }
 
         .nav-links { display: flex; gap: 2rem; list-style: none; }
         .nav-links a:hover { color: var(--accent); }
@@ -138,7 +147,9 @@
     <!-- Navigation -->
     <nav class="navbar">
         <!-- REPLACE [YOUR INITIALS] WITH YOUR ACTUAL INITIALS BELOW -->
-        <div class="logo">DN VENTURES</div>
+        <div class="logo">
+            <img src="logo.png" alt="DN Ventures">
+        </div>
         <ul class="nav-links">
             <li><a href="#thesis">Thesis</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
